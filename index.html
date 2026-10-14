@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Control de laboratorio</title>
+  <meta name="description" content="Controles de laboratorio por medicación en reumatología pediátrica.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Control de laboratorio</h1>
+      <p class="sub">Qué pedir y cada cuánto, según la medicación</p>
+    </header>
+
+    <p class="aviso">Esquemas y umbrales pendientes de validación médica. No reemplazan el criterio clínico.</p>
+
+    <section class="panel">
+      <h2>Medicación del paciente</h2>
+      <div id="medicaciones" class="checks"></div>
+    </section>
+
+    <section id="plan" aria-live="polite"></section>
+
+    <section class="panel">
+      <h2>Último laboratorio <span class="rango">opcional</span></h2>
+      <form id="labs" class="grilla" novalidate></form>
+      <div id="alertas" aria-live="polite"></div>
+    </section>
+
+    <footer>
+      <p>Los datos no se guardan ni se envían: todo se hace solo en este dispositivo.</p>
+      <p>Umbrales adaptados de BSR/BHPR 2017 (adultos); los valores normales pediátricos varían con la edad.</p>
+    </footer>
+  </main>
+  <script type="module" src="src/app.js"></script>
+</body>
+</html>

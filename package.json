@@ -1,0 +1,10 @@
+{
+  "name": "control-laboratorio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Controles de laboratorio por medicación en reumatología pediátrica",
+  "scripts": {
+    "test": "node --test"
+  }
+}
