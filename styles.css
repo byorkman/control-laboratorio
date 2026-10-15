@@ -63,3 +63,16 @@ input[type="number"] {
 .ok { color: var(--ok); margin: 0; font-weight: 600; }
 footer { color: var(--muted); font-size: .85rem; }
 footer p { margin: 0 0 6px; }
+
+.portal {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  text-decoration: none;
+  margin-bottom: 6px;
+}
+.portal::before { content: "←"; }
+.portal img { border-radius: 5px; }
+.portal:hover { color: var(--text); }
