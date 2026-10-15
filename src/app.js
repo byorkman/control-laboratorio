@@ -25,7 +25,7 @@ const lista = (items) => `<ul>${items.map((i) => `<li>${i}</li>`).join("")}</ul>
 function actualizarPlan() {
   const ids = [...contMeds.querySelectorAll("input:checked")].map((i) => i.value);
   if (!ids.length) {
-    plan.innerHTML = `<p class="pendiente">Elegí una o más medicaciones para ver los controles.</p>`;
+    plan.innerHTML = `<p class="pendiente">Seleccionar una o más medicaciones para ver los controles.</p>`;
     return;
   }
   const meds = MEDICACIONES.filter((m) => ids.includes(m.id));
